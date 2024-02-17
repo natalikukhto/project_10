@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+<section class="d-flex justify-content-center align-items-center vh-100">
+    <form class="">
+        <div class="text-center mb-5">
+            <p class="first-part-logo mb-0" style="font-size: 50px; line-height: 25px;">Lumincoin</p>
+            <p class="second-part-logo" style="font-size: 12px;line-height: 15px;">FINANCE</p>
+        </div>
+        <div class=" text-center  fs-2 fw-bold text-primary-emphasis mb-3">Вход</div>
+        <div class="input-group mb-2 ">
+            <div>
+                <div class="bg-secondary bg-opacity-25 p-2 border rounded-start d-flex align-items-center justify-content-center"
+                     style="width: 38px; height: 38px">
+                    <img class="align-baseline" src="../static/images/mail.png" alt="Email">
+                </div>
+            </div>
+            <div>
+                <input type="email" id="email" class="form-control " placeholder="Электронная почта">
+            </div>
+        </div>
+        <div class="input-group mb-2">
+            <div>
+                <div class="bg-secondary bg-opacity-25 p-2 border rounded-start d-flex align-items-center justify-content-center"
+                     style="width: 38px; height: 38px">
+                    <img class="align-baseline" src="../static/images/lock.png" alt="Email">
+                </div>
+            </div>
+            <div>
+                <input type="password" id="password" class="form-control" placeholder="Пароль">
+            </div>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
+            <label class="form-check-label  text-black " for="flexCheckDisabled" style="font-size: 12px">
+                Запомнить меня
+            </label>
+        </div>
+        <button type="button" class="btn btn-primary  text-white w-100    mb-2" id="process" disabled>Войти</button>
+        <div class="" style="font-size: 12px;">
+            Ещё нет аккаунта? <a href="./signup.html">Пройдите регистрацию</a>
+        </div>
+    </form>
+</section>
+
+<script src="../scripts/login.js"></script>
+<script src="../src/bootstrap.min.js"></script>
+</body>
+</html>

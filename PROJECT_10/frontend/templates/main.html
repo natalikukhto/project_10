@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/main.css">
+
+</head>
+<body>
+<div class="row justify-content-end mb-2 g-0" id="main-list">
+    <div class="col-11 col-xl-11 px-0 mt-0 ">
+        <h1 class=" pt-3 ps-0 mb-2 ">Главная</h1>
+    </div>
+</div>
+
+<div class="row justify-content-end mb-2 g-0 ">
+    <div class=" col-9 col-sm-11 px-0">
+        <div class=" d-flex  flex-wrap  pt-1 ps-0 ">
+            <button type="button" class="btn btn-secondary active  me-2 mb-2 ">Сегодня</button>
+            <button type="button" class="btn btn-outline-secondary me-2 mb-2">Неделя</button>
+            <button type="button" class="btn btn-outline-secondary me-2 mb-2">Месяц</button>
+            <button type="button" class="btn btn-outline-secondary me-2 mb-2">Год</button>
+            <button type="button" class="btn btn-outline-secondary me-2 mb-2">Все</button>
+            <button type="button" class="btn btn-outline-secondary me-2 mb-2">Интервал</button>
+            <label class="start-date me-2">с </label>
+            <input type="date" id="start-date" name="startDate" class="mb-2">
+            <span class="end-date ms-2 me-2">по</span>
+            <input type="date" id="end-date" name="endDate" class="mb-2">
+        </div>
+    </div>
+</div>
+
+
+<div class="row col-11 justify-content-center g-0">
+    <div class="d-flex  col-11 flex-wrap flex-lg-nowrap mx-0 px-0 g-0">
+        <!--            <div  id="ChartOne" class="col-7">-->
+        <canvas id="myChartOne"></canvas>
+        <!--            </div>-->
+        <!--            <div  id="ChartTwo" class="col-7">-->
+        <canvas id="myChartTwo"></canvas>
+        <!--            </div>-->
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+<script src="../scripts/main.js"></script>
+
+
+<script src="../src/bootstrap.min.js"></script>
+</body>
+</html>

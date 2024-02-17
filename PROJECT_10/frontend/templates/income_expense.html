@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+
+    <title>Доходы и расходы</title>
+
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+<div class="row justify-content-end mb-sm-5 mb-2 g-0">
+    <div class="col-11">
+        <h1 class=" pt-5 ps-0 mb-6 ">Доходы и расходы</h1>
+    </div>
+    <div class="col-11 pt-sm-5 ">
+        <button class="btn btn-success px-3 me-2 mb-2 ">Создать доход</button>
+        <button class="btn btn-danger mb-2">Создать расход</button>
+    </div>
+</div>
+<div class="row  justify-content-end mb-5 g-0">
+    <div class="col-11 ">
+        <div class="  pt-2  ">
+            <button type="button" class="btn btn-secondary active  me-2 mb-2">Сегодня</button>
+            <button type="button" class="btn btn-outline-secondary me-2 mb-2">Неделя</button>
+            <button type="button" class="btn btn-outline-secondary me-2 mb-2">Месяц</button>
+            <button type="button" class="btn btn-outline-secondary me-2 mb-2">Год</button>
+            <button type="button" class="btn btn-outline-secondary me-2 mb-2">Все</button>
+            <button type="button" class="btn btn-outline-secondary me-2 mb-2">Интервал</button>
+            <label class="start-date me-2 mb-2">с </label>
+            <input type="date" class="mb-2" id="start-date" name="startDate">
+
+            <span class="end-date ms-2 me-2 mb-2">по</span>
+            <input type="date" class="mb-2" id="end-date" name="endDate">
+        </div>
+        <div class="table-responsive-md mt-5">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">№ операции</th>
+                    <th scope="col">Тип</th>
+                    <th scope="col">Категория</th>
+                    <th scope="col">Сумма</th>
+                    <th scope="col">Дата</th>
+                    <th scope="col">Комментарий</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row" class="pt-3">1</th>
+                    <td class="text-success pt-3">доход</td>
+                    <td class="pt-3">зарплата</td>
+                    <td class="pt-3">500$</td>
+                    <td class="pt-3">11.09.2022</td>
+                    <td class="pt-3"></td>
+                    <td>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="../static/images/trash-icon.svg" alt="Trash">
+                        </button>
+                        <button type="button" class="btn">
+                            <img src="../static/images/pen-icon.svg" alt="Pen">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pt-3">2</th>
+                    <td class="text-danger pt-3">расход</td>
+                    <td class="pt-3">жильё</td>
+                    <td class="pt-3">2 500$</td>
+                    <td class="pt-3">12.09.2022</td>
+                    <td class="pt-3"></td>
+                    <td>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="../static/images/trash-icon.svg" alt="Trash">
+                        </button>
+                        <button type="button" class="btn">
+                            <img src="../static/images/pen-icon.svg" alt="Pen">
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content  p-3 ">
+            <div class="modal-body d-flex flex-column align-items-center">
+                <p class="text-nowrap">Вы действительно хотите удалить операцию?</p>
+                <div class="modal-button">
+                    <button type="button" class="btn btn-success  me-3" data-bs-dismiss="modal">Да, удалить</button>
+                    <button type="button" class="btn btn-danger ">Не удалять</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../src/bootstrap.min.js"></script>
+</body>
+</html>

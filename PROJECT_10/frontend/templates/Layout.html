@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title> Layout </title>
+    <link rel="import" href="main.html">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+</head>
+<body>
+<section class=" row   g-0">
+    <div class="col-sm-5 col-md-3 col-xl-2  border-end border-secondary-subtle pe-0">
+        <div class="d-flex align-items-stretch flex-column ">
+            <div class="text-center pt-4 pt-sm-5 pb-0 pb-sm-3  border-bottom border-secondary-subtle  ">
+                <p class="first-part-logo mb-0" style="font-size: 34px; line-height: 17px;">Lumincoin</p>
+                <p class="second-part-logo" style="font-size: 8px;line-height: 11px;">FINANCE</p>
+            </div>
+            <div class="px-2  pt-1 pt-sm-5 mb-0 mb-sm-5  ">
+                <ul class="nav nav-pills flex-sm-column mb-0 mb-sm-5 ">
+                    <li class="nav-item" id="main">
+                        <a href="#" class="nav-link active" id="menu-main">
+                            <img src="../static/images/home.svg" class="align-baseline  me-2" alt="Home">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="menu-income-expenses">
+                            <img src="../static/images/money.svg" class="align-baseline  me-2" alt="Money">
+                            Доходы & Расходы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  link-body-emphasis btn-toggle
+                    text-center collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse"
+                           aria-expanded="true" id="menu-categories">
+                            Категории
+                        </a>
+                        <div class="border-primary collapse  " id="home-collapse">
+                            <ul class="btn-toggle-nav list-unstyled">
+                                <li><a href="/#/income" class="nav-link  " id="menu-income">Доходы</a></li>
+                                <li><a href="#" class="nav-link" id="menu-expenses">Расходы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-0 mt-sm-2 d-flex  d-sm-block border-bottom border-secondary-subtle">
+                <div class=" border-bottom border-secondary-subtle pb-3  ps-4 pt-4 mt-0 mt-sm-5 fw-bold ">
+                    Баланс: <span class="text-primary "> 500 $</span>
+                </div>
+                <div class=" pt-3 pb-3 pb-sm-5  ps-4  d-flex align-items-center">
+                    <div class=" d-flex align-items-center justify-content-center bg-secondary bg-opacity-25 lh-1 rounded-circle align-content-center"
+                         style="width: 36px; height: 36px">
+                        <a href="#" class="nav-link link-body-emphasis" data-bs-toggle="modal"
+                           data-bs-target="#logoutModal ">
+                            <img src="../static/images/person.png" class="p-3" alt="Person"> </a>
+                    </div>
+                    <span id="profile-name" class="ps-3 ">Имя Фамилия</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal" tabindex="-1">
+        <div class="modal-body">
+
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Выйти</button>
+        </div>
+    </div>
+    <iframe src="main.html" class="col-sm-7 col-md-9 col-xl-10 justify-content-between vh-100 "></iframe>
+</section>
+
+<script src="../scripts/common.js"></script>
+<script src="../src/bootstrap.min.js"></script>
+<script src="../scripts/Layout.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Secret-Service";
+    src: url("../static/fonts/SecretService-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("../static/fonts/Inter-Regular.otf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../static/fonts/Roboto-Regular.ttf");
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.first-part-logo {
+    font-family: "Secret-Service", sans-serif;
+    font-weight: 400;
+    color: #0D6EFD;
+}
+
+.second-part-logo {
+    font-family: "Inter-Regular", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.2em;
+    text-transform: uppercase;
+    color: #052C65;
+}
+
+.btn-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.btn-toggle::after {
+    width: 1.25em;
+    line-height: 0;
+    content: url("../static/images/arrow.svg");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+    margin-left: 70px;
+    /*text-align: center;*/
+}
+
+.btn-toggle[aria-expanded="true"]::after {
+    transform: rotate(90deg);
+
+}
+
+.btn-toggle.active::after {
+    content: url("../static/images/arrow-white.svg");
+}
+h1 {
+    color: #052C65;
+    font-weight: 700;
+}
+h4 {
+    color: #290661;
+    font-weight: 600;
+}
+p {
+    color: #290661;
+    font-size: 20px;
+    font-weight: 500;
+}
+#start-date{
+    color: #6C757D;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #6C757D;
+}
+.start-date{
+    padding-top: 8px;
+}
+#end-date{
+    color: #6C757D;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #6C757D;
+}
+.end-date{
+    padding-top: 8px;
+}
+.table-wrapper {
+
+}
+
+
+
+
